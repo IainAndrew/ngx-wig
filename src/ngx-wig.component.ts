@@ -106,7 +106,7 @@ export class NgxWigComponent implements OnInit, OnChanges, ControlValueAccessor 
     }
   }
 
-  private _onContentChange(newContent: string): void {
+  public _onContentChange(newContent: string): void {
     this.content = newContent;
     this.contentChange.emit(this.content);
     this.propagateChange(this.content);
